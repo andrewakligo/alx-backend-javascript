@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""iterable object"""
-from typing import Any, Union, Mapping, Optional, TypeVar
+'''Task 11's module.
+'''
+from typing import Any, Mapping, Union, TypeVar
+
 
 T = TypeVar('T')
+Res = Union[Any, T]
+Def = Union[T, None]
 
 
-def safely_get_value(dct: Mapping, key: Any,
-                     default: Union[T, None] = None) -> Union[Any, T]:
-    """returns map key value"""
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
+    '''Retrieves a value from a dict using a given key.
+    '''
     if key in dct:
         return dct[key]
     else:

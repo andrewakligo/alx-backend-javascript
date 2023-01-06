@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""a type-annotated function"""
+'''Task 5's module.
+'''
 from typing import List
 
 
 def sum_list(input_list: List[float]) -> float:
-    """ returns sum of the list"""
-    return sum(input_list)
+    '''Computes the sum of a list of floating-point numbers.
+    '''
+    return float(sum(input_list))

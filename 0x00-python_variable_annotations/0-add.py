@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""a type-annotated function"""
+'''Task 0's module.
+'''
 
 
 def add(a: float, b: float) -> float:
-    """return the sum"""
+    '''Adds two floating-point numbers.
+    '''
     return a + b

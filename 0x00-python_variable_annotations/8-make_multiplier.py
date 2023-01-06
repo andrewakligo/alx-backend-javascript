@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""a type-annotated function"""
+'''Task 8's module.
+'''
 from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
-    """ returns mult function"""
-    def mult(n: float) -> float:
-        return multiplier * n
-    return mult
+    '''Creates a multiplier function.
+    '''
+    return lambda x: x * multiplier
